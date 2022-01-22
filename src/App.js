@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import List from './components/List';
+import { ListsProvider } from './contexts/ListsContext';
+
 import './style.css';
 
 export default function App() {
@@ -11,7 +13,7 @@ export default function App() {
   });
 
   return (
-    <>
+    <ListsProvider>
       <Navbar />
       <div className="container py-3">
         <div className="row">
@@ -26,6 +28,6 @@ export default function App() {
           </div>
         </div>
       </div>
-    </>
+    </ListsProvider>
   );
 }

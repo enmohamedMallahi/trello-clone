@@ -34,7 +34,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div>
-          <input type="text" class="form-control" placeholder="Search" />
+          <input type="text" className="form-control" placeholder="Search" />
         </div>
       </div>
     </nav>
